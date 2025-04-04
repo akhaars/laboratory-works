@@ -19,7 +19,7 @@ font = pygame.font.SysFont("Verdana", 60)
 font_small = pygame.font.SysFont("Verdana", 20)
 game_over = font.render("Game Over", True, black)
  
-background = pygame.image.load("C:/Users/Daulet/Desktop/pp2/lab8/raser/street.webp")
+background = pygame.image.load("C:/Users/arg_a/OneDrive/Рабочий стол/8 lab/racer/street.webp")
  
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Raser")
@@ -28,7 +28,7 @@ t = pygame.time.Clock()
 class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__() 
-        self.image = pygame.image.load("c:/Users/Daulet/Desktop/pp2/lab8/raser/Enemy.webp")
+        self.image = pygame.image.load("C:/Users/arg_a/OneDrive/Рабочий стол/8 lab/racer/Enemy.webp")
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, width - 40), 0) 
  
@@ -43,7 +43,7 @@ class Enemy(pygame.sprite.Sprite):
 class Money(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__() 
-        self.image = pygame.image.load("C:/Users/Daulet/Desktop/pp2/lab8/raser/money.png")
+        self.image = pygame.image.load("C:/Users/arg_a/OneDrive/Рабочий стол/8 lab/racer/money.png")
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, width - 40), 0) 
  
@@ -59,7 +59,7 @@ class Money(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__() 
-        self.image = pygame.image.load("C:/Users/Daulet/Desktop/pp2/lab8/raser/Player.png")
+        self.image = pygame.image.load("C/User/arg_OneDriv/Рабочий стол/8 lab/racer/Player.png")
         self.rect = self.image.get_rect()
         self.rect.center = (width/2, height - 80)
 
